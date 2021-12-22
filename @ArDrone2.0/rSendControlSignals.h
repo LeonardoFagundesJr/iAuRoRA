@@ -1,5 +1,5 @@
 
-#include "/content/sDynamicModel.h"
+#include "/content/iAuRoRA/@ArDrone2.0/sDynamicModel.h"
 
 void rSendControlSignals(struct ArDrone *drone){
     
