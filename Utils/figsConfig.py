@@ -1,7 +1,9 @@
 
 # --
-def graphicsConfig(plt):
+def graphicsConfig():
 
+    global plt
+    
     SMALL_SIZE = 16
     MEDIUM_SIZE = 18
     BIGGER_SIZE = 22
