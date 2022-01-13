@@ -1,4 +1,7 @@
 
+#ifndef _RSENDCONTROLSIGNALS_h
+#define _RSENDCONTROLSIGNALS_h
+
 #include "/content/iAuRoRA/@ArDrone2.0/sDynamicModel.h"
 
 void rSendControlSignals(struct ArDrone *drone){
@@ -18,3 +21,5 @@ void rSendControlSignals(struct ArDrone *drone){
 
        
 }
+
+#endif
