@@ -19,6 +19,9 @@
 %            1                2                3               4
  */
 
+#ifndef _SDYNAMICMODEL_h
+#define _SDYNAMICMODEL_h
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -319,8 +322,12 @@ void sDynamicModel(struct ArDrone *drone){
                 drone->pPosX[ii] += + 6.283185;     // 2*M_PI
             }
         }
+        
+        
     }
 
     delete Mt_inv, Mr_inv;
 
 }
+
+#endif
