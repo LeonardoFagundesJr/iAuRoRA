@@ -1,6 +1,6 @@
 
 # --
-def graphicsConfig():
+def graphicsConfig(plt):
 
     SMALL_SIZE = 16
     MEDIUM_SIZE = 18
