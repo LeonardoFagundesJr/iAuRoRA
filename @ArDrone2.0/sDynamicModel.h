@@ -25,7 +25,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "/content/iAuRoRA/@ArDrone2.0/importantFunctions.h"
+#include "/content/iAuRoRA/Utils/importantFunctions.h"
 
 
 void sDynamicModel(struct ArDrone *drone){
