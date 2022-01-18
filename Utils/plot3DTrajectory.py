@@ -1,7 +1,7 @@
 
 
 #---
-def plot3DTrajectory(df):
+def plot3DTrajectory(df,plt):
     fig = plt.figure(facecolor='w')
     ax = fig.gca(projection='3d', adjustable='box', facecolor=[1, 1, 1])
 
