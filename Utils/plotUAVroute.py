@@ -1,7 +1,7 @@
 
 
 #---
-def plotUAVroute(df):
+def plotUAVroute(df,plt):
     ## - Plot the Robot Position
 
     fig, axs = plt.subplots(3, sharex=True)
