@@ -1,6 +1,6 @@
 
 #---
-def updateCurve(w,ax):
+def updateCurve(w):
     ax.clear()
     global i,df
 
