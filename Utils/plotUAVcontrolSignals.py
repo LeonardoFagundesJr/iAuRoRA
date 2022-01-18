@@ -1,6 +1,6 @@
 
 #---
-def plotUAVcontrolSignals(df):  
+def plotUAVcontrolSignals(df,plt):  
     ## - Plot the Control Signals
     fig, axs = plt.subplots(2,2, sharex=True)
 
