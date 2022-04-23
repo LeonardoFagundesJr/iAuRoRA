@@ -12,7 +12,7 @@ def plotUAVlinearVel(df,plt):
     axs[0].plot(df['time'], df['X[6]'], color='red')
 
     axs[0].set(ylabel='$\dot{\widetilde{x}}~$ [m/s]')
-    axs[0].legend(['$\dot{x}_d$','$\dot{x}$'],loc='upper right', bbox_to_anchor=(1.20, 1))
+    axs[0].legend(['$\dot{x}_d$','$\dot{x}$'],loc='upper right', bbox_to_anchor=(1.15, 1))
     axs[0].grid(True)
     axs[0].set_yticks([-0.6,-0.4,-0.2,-0.1,0,0.1,0.2,0.4,0.6])
     axs[0].set(xlim=(min(df['time']), max(df['time'])), 
@@ -23,7 +23,7 @@ def plotUAVlinearVel(df,plt):
     axs[1].plot(df['time'], df['X[7]'], color='red')
 
     axs[1].set(ylabel=r'$\dot{\widetilde{y}}~$ [m/s]')
-    axs[1].legend([r'$\dot{y}_d$',r'$\dot{y}$'],loc='upper right', bbox_to_anchor=(1.2, 1))
+    axs[1].legend([r'$\dot{y}_d$',r'$\dot{y}$'],loc='upper right', bbox_to_anchor=(1.15, 1))
     axs[1].grid(True)
     axs[1].set_yticks([-0.6,-0.4,-0.2,-0.1,0,0.1,0.2,0.4,0.6])
     axs[1].set(xlim=(min(df['time']), max(df['time'])), 
@@ -34,7 +34,7 @@ def plotUAVlinearVel(df,plt):
     axs[2].plot(df['time'], df['X[8]'], color='red')
 
     axs[2].set(xlabel='time [$s$]', ylabel='$\dot{\widetilde{z}}~$ [m/s]')
-    axs[2].legend(['$\dot{z}_d$','$\dot{z}$'],loc='upper right', bbox_to_anchor=(1.2, 1))
+    axs[2].legend(['$\dot{z}_d$','$\dot{z}$'],loc='upper right', bbox_to_anchor=(1.15, 1))
     axs[2].grid(True)
     axs[2].set_yticks([-0.6,-0.4,-0.2,0,0.2,0.4,0.6])
     axs[2].set(xlim=(min(df['time']), max(df['time'])), 
