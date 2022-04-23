@@ -11,7 +11,7 @@ def plotUAVangularVel(df,plt):
     axs[0].plot(df['time'], df['X[9]'], color='red')
 
     axs[0].set(ylabel=r'$\dot{\widetilde{\phi}}~$ [rad/s]')
-    axs[0].legend(['$\dot{\phi}_d$','$\dot{\phi}$'],loc='upper right', bbox_to_anchor=(1.20, 1))
+    axs[0].legend(['$\dot{\phi}_d$','$\dot{\phi}$'],loc='upper right', bbox_to_anchor=(1.15, 1))
     axs[0].grid(True)
     axs[0].set_yticks([-2,-1,0,1,2])
     axs[0].set(xlim=(min(df['time']), max(df['time'])), 
@@ -60,7 +60,7 @@ def plotUAVangularVel(df,plt):
     axs[1].plot(df['time'], df['X[10]'], color='red')
 
     axs[1].set(ylabel=r'$\dot{\widetilde{\theta}}~$ [rad/s]')
-    axs[1].legend([r'$\dot{\theta}_d$',r'$\dot{\theta}$'],loc='upper right', bbox_to_anchor=(1.2, 1))
+    axs[1].legend([r'$\dot{\theta}_d$',r'$\dot{\theta}$'],loc='upper right', bbox_to_anchor=(1.15, 1))
     axs[1].grid(True)
     axs[1].set_yticks([-2,-1,0,1,2])
     axs[1].set(xlim=(min(df['time']), max(df['time'])), 
@@ -71,7 +71,7 @@ def plotUAVangularVel(df,plt):
     axs[2].plot(df['time'], df['X[11]'], color='red')
 
     axs[2].set(xlabel='time [$s$]', ylabel='$\dot{\widetilde{\psi}}~$ [rad/s]')
-    axs[2].legend(['$\dot{\psi}_d$','$\dot{\psi}$'],loc='upper right', bbox_to_anchor=(1.2, 1))
+    axs[2].legend(['$\dot{\psi}_d$','$\dot{\psi}$'],loc='upper right', bbox_to_anchor=(1.15, 1))
     axs[2].grid(True)
     axs[2].set_yticks([-0.2,0,0.2])
     axs[2].set(xlim=(min(df['time']), max(df['time'])), 
