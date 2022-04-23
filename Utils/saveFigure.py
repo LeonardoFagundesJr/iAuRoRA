@@ -18,7 +18,7 @@ def saveFig(fig,nameFig):
     import os
 
     if not(os.path.isdir('../content/Figures/')):
-        os.mkdir('../content/FiguresA/')
+        os.mkdir('../content/Figures/')
 
     nameFig = os.path.join("../content/Figures/",nameFig)        
 
