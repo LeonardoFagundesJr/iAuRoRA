@@ -12,7 +12,7 @@ def plotUAVorientation(df,plt):
     axs[0].plot(df['time'], df['X[3]']*180/np.pi, color='red')
 
     axs[0].set(ylabel='$\widetilde{\phi}~$ [$^\circ$]')
-    axs[0].legend(['$\phi_d$','$\phi$'],loc='upper right', bbox_to_anchor=(1.10, 1))
+    axs[0].legend(['$\phi_d$','$\phi$'],loc='upper right', bbox_to_anchor=(1.15, 1))
     axs[0].grid(True)
     axs[0].set_yticks([-4.0,-2.0,0,2.0,4.0])
     axs[0].set(xlim=(min(df['time']), max(df['time'])), 
@@ -23,7 +23,7 @@ def plotUAVorientation(df,plt):
     axs[1].plot(df['time'], df['X[4]']*180/np.pi, color='red')
 
     axs[1].set(ylabel=r'$\widetilde{\theta}~$ [$^\circ$]')
-    axs[1].legend([r'$\theta_d$',r'$\theta$'],loc='upper right', bbox_to_anchor=(1.10, 1))
+    axs[1].legend([r'$\theta_d$',r'$\theta$'],loc='upper right', bbox_to_anchor=(1.15, 1))
     axs[1].grid(True)
     axs[1].set_yticks([-4.0,-2.0,0,2.0,4.0])
     axs[1].set(xlim=(min(df['time']), max(df['time'])), 
@@ -34,7 +34,7 @@ def plotUAVorientation(df,plt):
     axs[2].plot(df['time'], df['X[5]']*180/np.pi, color='red')
 
     axs[2].set(xlabel='time [$s$]', ylabel='$\widetilde{\psi}~$ [$^\circ$]')
-    axs[2].legend(['$\psi_d$','$\psi$'],loc='upper right', bbox_to_anchor=(1.10, 1))
+    axs[2].legend(['$\psi_d$','$\psi$'],loc='upper right', bbox_to_anchor=(1.15, 1))
     axs[2].grid(True)
     axs[2].set_yticks([0,15,30,45])
     axs[2].set(xlim=(min(df['time']), max(df['time'])), 
