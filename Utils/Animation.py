@@ -1,6 +1,8 @@
 # Função para gerar a Figura 3D onde será realizada a animação:
 
 def anim3Dplot(plt):
+    
+    import numpy as np
 
     plt.rc('axes', axisbelow=True) # Manda o grid para trás
     plt.rcParams['animation.embed_limit'] = 2**128
