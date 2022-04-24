@@ -112,7 +112,7 @@ def init():
 # Função que gera a animação: 
 
 #---
-def updateCurve(w, tempo, dataSet, dataSetd, txt_title, dTAnim):
+def updateCurve(w, uav, route, xd, tempo, dataSet, dataSetd, txt_title, dTAnim):
     global tempo, dataSet, dataSetd, txt_title
     # 'w' is the frame
     
