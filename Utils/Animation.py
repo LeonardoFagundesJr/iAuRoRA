@@ -117,3 +117,17 @@ def updateCurve(w):
     plt.draw()
 
     return uav, route, xd,
+
+
+# Save Animation as video file
+def saveAnimation(anim, fileName, dTAnim, dpi):
+    import os
+
+    if not(os.path.isdir('../content/Animation/')):
+        os.mkdir('../content/Animation/')
+
+    f = os.path.join("../content/Animation/",fileName)        
+    writervideo = animation.writers['ffmpeg'](fps=round(1/dTAnim)) 
+    anim.save(f, writer=writervideo, dpi=dpi)
+
+    return None
