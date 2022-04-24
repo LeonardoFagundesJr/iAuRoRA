@@ -3,6 +3,8 @@
 def anim3Dplot(plt, df, dTAnim):
     
     import numpy as np
+    import math
+
 #     global pxAnim, pyAnim, pzAnim, pxdAnim, pydAnim, pzAnim, phiAnim, thetaAnim, psiAnim
 
     dT = df['time'].iloc[-1]/(len(df)-1)      # Tempo de amostragem do robô [s]
