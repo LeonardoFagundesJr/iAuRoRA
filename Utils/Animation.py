@@ -113,7 +113,7 @@ def init():
 
 #---
 def updateCurve(w, uav, route, xd, tempo, dataSet, dataSetd, txt_title, dTAnim):
-    global tempo, dataSet, dataSetd, txt_title
+#     global tempo, dataSet, dataSetd, txt_title
     # 'w' is the frame
     
     txt_title.set_text("time: %.2f [seg], {\em frame}: %2.0f"%(tempo,w) )
