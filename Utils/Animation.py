@@ -1,9 +1,22 @@
 # Função para gerar a Figura 3D onde será realizada a animação:
 
-def anim3Dplot(plt):
+def anim3Dplot(plt, df):
     
     import numpy as np
-    global pxAnim, pyAnim, pzAnim, pxdAnim, pydAnim, pzAnim, phiAnim, thetaAnim, psiAnim
+#     global pxAnim, pyAnim, pzAnim, pxdAnim, pydAnim, pzAnim, phiAnim, thetaAnim, psiAnim
+
+    pxAnim = df['A.pPosX[0]'][::samples]      # vetor x com novo numero de amostras
+    pyAnim = df['X[1]'][::samples]            # vetor y com novo numero de amostras
+    pzAnim = df['X[2]'][::samples]            # vetor z com novo numero de amostras
+
+    pxdAnim = df['A.pPosXd[0]'][::samples]    # vetor x_d com novo numero de amostras
+    pydAnim = df['Xd[1]'][::samples]          # vetor y_d com novo numero de amostras
+    pzdAnim = df['Xd[2]'][::samples]          # vetor z_d com novo numero de amostras
+
+    phiAnim = df['X[3]'][::samples]           # vetor PHI com novo numero de amostras
+    thetaAnim = df['X[4]'][::samples]         # vetor THETA com novo numero de amostras
+    psiAnim = df['X[5]'][::samples]           # vetor PSI com novo numero de amostras
+
 
     plt.rc('axes', axisbelow=True) # Manda o grid para trás
     plt.rcParams['animation.embed_limit'] = 2**128
