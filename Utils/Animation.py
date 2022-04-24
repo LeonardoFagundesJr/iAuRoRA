@@ -1,9 +1,12 @@
 # Função para gerar a Figura 3D onde será realizada a animação:
 
-def anim3Dplot(plt, df):
+def anim3Dplot(plt, df, dTAnim):
     
     import numpy as np
 #     global pxAnim, pyAnim, pzAnim, pxdAnim, pydAnim, pzAnim, phiAnim, thetaAnim, psiAnim
+
+    dT = df['time'].iloc[-1]/(len(df)-1)      # Tempo de amostragem do robô [s]
+    samples = math.ceil(dTAnim/dT)            # taxa de amostragem do novo vetor
 
     pxAnim = df['A.pPosX[0]'][::samples]      # vetor x com novo numero de amostras
     pyAnim = df['X[1]'][::samples]            # vetor y com novo numero de amostras
