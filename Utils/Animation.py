@@ -3,6 +3,7 @@
 def anim3Dplot(plt):
     
     import numpy as np
+    global pxAnim, pyAnim, pzAnim, pxdAnim, pydAnim, pzAnim, phiAnim, thetaAnim, psiAnim
 
     plt.rc('axes', axisbelow=True) # Manda o grid para trás
     plt.rcParams['animation.embed_limit'] = 2**128
@@ -63,7 +64,7 @@ def anim3Dplot(plt):
     # create objects that will change in the animation. These are
     # initially empty, and will be given new values for each frame
     # in the animation.
-    txt_title = ax.text(0, 0, 3.25, 'AAAAAA', ha='center', size=18)
+    txt_title = ax.text(0, 0, 3.25, '', ha='center', size=18)
 
     print('\n')
 
