@@ -3,7 +3,7 @@
 #---
 def plot3DTrajectory(df,plt):
     fig = plt.figure(facecolor='w')
-    ax = fig.add_subplot(projection='3d', adjustable='box', facecolor=[1, 1, 1])
+    ax = fig.add_subplot(projection='3d',adjustable='box',facecolor=[1, 1, 1])
 
     ax.plot3D(df['A.pPosX[0]'], df['X[1]'], df['X[2]'], label='Position')
     ax.scatter3D(df['A.pPosXd[0]'][[0,500,1000,1500]], df['Xd[1]'][[0,500,1000,1500]],
